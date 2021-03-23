@@ -1,6 +1,9 @@
 package com.mzxssg.yygh.hosp.config;
 
+import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
+import jdk.nashorn.internal.ir.ReturnNode;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -11,4 +14,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @MapperScan("com.mzxssg.yygh.hosp.mapper")
 public class HospConfig {
+
+    @Bean
+    public PaginationInterceptor paginationInterceptor(){
+        return new PaginationInterceptor();
+    }
 }
