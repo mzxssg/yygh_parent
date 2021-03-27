@@ -1,4 +1,4 @@
-package com.mzxssg.yygh.hosp;
+package com.mzxssg.yygh.cmn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,13 +6,14 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @Author: Zexin Ma
- * @Create: 2021-03-19-19:25
+ * @Create: 2021-03-23-19:11
  * @Description:
  */
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.mzxssg"})
-public class ServiceHospApplication {
+public class ServiceCmnApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ServiceHospApplication.class, args);
+        SpringApplication.run(ServiceCmnApplication.class, args);
     }
+
 }
