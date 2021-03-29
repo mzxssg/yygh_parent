@@ -76,3 +76,27 @@ docker exec -it nginx  bash
 docker commit -m="monitor port 9001 and forward" -a="mzxssg" 9eb73f57d0cc mynginx:latest
 
 完成后就可以使用这个镜像生成容器并使用了！
+
+
+##开启软件：
+nacos
+redis：同下
+MongoDB：
+1.查看MongoDB镜像：linux中docker images
+2.如果没有镜像则进行拉取：docker pull mongo:latest
+3.创建和启动容器：docker run -d --restart=always -p 27017:27017 --name mymongo -v /data/db:/data/db -d mongo
+4.进入容器：docker exec -it mymongo/bin/bash 
+5.使用MongoDB客户端进行操作：mongo
+6.> show dbs #查询所有的数据库 
+  admin 0.000GB 
+  config 0.000GB 
+  local 0.000GB 
+nginx：
+1.查看nginx镜像：linux中docker images
+2.启动容器：docker run -d --name mynginx -p 9001:9001 -d mynginx
+3.如用修改nginx的配置文件：
+3.1.进入nginx容器：docker exec -it mynginx bash
+3.2.进入nginx配置目录下：cd /etc/nginx
+3.3.使用vim进入nginx.conf配置文件： vim nginx.conf
+3.4.修改相关配置
+

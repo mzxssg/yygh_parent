@@ -59,8 +59,6 @@ public class HospitalSetController {
     @ApiOperation(value = "条件查询带分页")
     @PostMapping("findPage/{current}/{limit}")
     public Result findPageHospSet(@PathVariable long current,
-
-
                                   @PathVariable long limit,
                                   @RequestBody(required = false ) HospitalSetQueryVo hospitalSetQueryVo){
         //创建page对象，传入当前页，每页记录数
