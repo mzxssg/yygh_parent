@@ -24,4 +24,5 @@ public class AuthContextHolder {
         String userName = JwtHelper.getUserName(token);
         return userName;
     }
+
 }

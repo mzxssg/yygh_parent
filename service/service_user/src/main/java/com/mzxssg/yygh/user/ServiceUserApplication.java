@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = "com.mzxssg")
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.atguigu")
+@EnableFeignClients(basePackages = "com.mzxssg")
 public class ServiceUserApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceUserApplication.class, args);

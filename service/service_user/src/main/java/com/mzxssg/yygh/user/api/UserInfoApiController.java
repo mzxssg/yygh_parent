@@ -1,4 +1,4 @@
-package com.mzxssg.yygh.user.controller;
+package com.mzxssg.yygh.user.api;
 
 import com.mzxssg.yygh.common.result.Result;
 import com.mzxssg.yygh.common.utils.AuthContextHolder;
