@@ -2,6 +2,7 @@ package com.mzxssg.yygh.hosp.controller;
 
 import ch.qos.logback.core.pattern.util.RestrictedEscapeUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mzxssg.yygh.common.result.Result;
 import com.mzxssg.yygh.common.utils.MD5;

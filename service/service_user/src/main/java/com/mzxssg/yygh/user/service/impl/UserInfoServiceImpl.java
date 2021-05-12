@@ -18,6 +18,7 @@ import com.mzxssg.yygh.user.service.UserInfoService;
 import com.mzxssg.yygh.vo.user.LoginVo;
 import com.mzxssg.yygh.vo.user.UserAuthVo;
 import com.mzxssg.yygh.vo.user.UserInfoQueryVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -35,7 +36,10 @@ import java.util.Map;
 @Service
 public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> implements UserInfoService {
 
+    @Autowired
     private RedisTemplate<String,String> redisTemplate;
+
+    @Autowired
     private PatientService patientService;
 
     @Override
